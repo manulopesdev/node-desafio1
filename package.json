@@ -1,0 +1,22 @@
+{
+  "name": "tasks-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@fastify/cors": "^11.0.1",
+    "csv-parse": "^5.6.0",
+    "fastify": "^5.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
