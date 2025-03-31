@@ -89,11 +89,9 @@ export const routes = [
         path: '/tasks/import-csv',
         handler: async (request, reply) => {
             try {
-                // Passe a instância de database
                 await importTasksFromCSV(database)
                 return reply.status(200).send({ message: 'CSV importado com sucesso' })
             } catch (error) {
-                // Adicione o parâmetro de erro para log
                 console.error('Erro na importação:', error)
                 return reply.status(500).send({
                     error: 'Erro ao importar o CSV',
